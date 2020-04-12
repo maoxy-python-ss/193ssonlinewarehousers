@@ -11,8 +11,8 @@ from django.db import models
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
-class TAdmin(models.Model):
+# 后台用户表
+class Admin(models.Model):
     admin_name = models.CharField(max_length=20, blank=True, null=True)
     password = models.CharField(max_length=50, blank=True, null=True)
     phone = models.IntegerField(blank=True, null=True)
@@ -22,9 +22,9 @@ class TAdmin(models.Model):
         managed = True
         db_table = 't_admin'
 
-
-class TChapter(models.Model):
-    buddhist = models.ForeignKey('TGhosa', models.DO_NOTHING, blank=True, null=True)
+# 文章表
+class Chapter(models.Model):
+    buddhist = models.ForeignKey('Ghosa', models.DO_NOTHING, blank=True, null=True)
     chapter = models.CharField(max_length=50, blank=True, null=True)
     voice_url = models.CharField(max_length=50, blank=True, null=True)
     memory = models.CharField(max_length=20, blank=True, null=True)
@@ -35,18 +35,18 @@ class TChapter(models.Model):
         db_table = 't_chapter'
 
 
-class TCounter(models.Model):
+class Counter(models.Model):
     counter_name = models.CharField(max_length=50, blank=True, null=True)
     homework_data = models.DateTimeField(blank=True, null=True)
     count = models.IntegerField(blank=True, null=True)
-    homework = models.ForeignKey('THomework', models.DO_NOTHING, blank=True, null=True)
+    homework = models.ForeignKey('Homework', models.DO_NOTHING, blank=True, null=True)
 
     class Meta:
         managed = True
         db_table = 't_counter'
 
-
-class TGhosa(models.Model):
+# 修改表
+class Ghosa(models.Model):
     album_name = models.CharField(max_length=20, blank=True, null=True)
     albumt_img = models.ImageField(upload_to='pic', default=None,max_length=50, blank=True, null=True)
     grade = models.DecimalField(max_digits=2, decimal_places=1, blank=True, null=True)
@@ -60,9 +60,9 @@ class TGhosa(models.Model):
         managed = True
         db_table = 't_ghosa'
 
-
-class THomework(models.Model):
-    user = models.ForeignKey('TUser', models.DO_NOTHING, blank=True, null=True)
+# 工作表
+class Homework(models.Model):
+    user = models.ForeignKey('User', models.DO_NOTHING, blank=True, null=True)
     homework_name = models.CharField(max_length=50, blank=True, null=True)
     sort = models.CharField(max_length=20, blank=True, null=True)
 
@@ -70,8 +70,8 @@ class THomework(models.Model):
         managed = True
         db_table = 't_homework'
 
-
-class TImage(models.Model):
+# 图片路径表
+class Image(models.Model):
     img_url = models.ImageField(upload_to='pic', default=None,blank=True, null=True)
     title = models.CharField(max_length=20, blank=True, null=True)
     status = models.IntegerField(blank=True, null=True)
@@ -81,8 +81,8 @@ class TImage(models.Model):
         managed = True
         db_table = 't_image'
 
-
-class TUser(models.Model):
+# 用户表
+class User(models.Model):
     username = models.CharField(max_length=20, blank=True, null=True)
     password = models.CharField(max_length=20, blank=True, null=True)
     religious_name = models.CharField(max_length=20, blank=True, null=True)

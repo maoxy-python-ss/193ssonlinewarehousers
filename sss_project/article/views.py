@@ -1,22 +1,12 @@
-from django.shortcuts import render
-
-# Create your views here.
-
-import json
-import os
-import time
-
+import json,os,time
 from django.db import transaction
-from django.http import JsonResponse
 from django.http import HttpResponse
 from django.views.decorators.clickjacking import xframe_options_sameorigin
+from django.views.decorators.csrf import csrf_exempt
 from article.models import Article,Pic
 from django.core.paginator import Paginator, EmptyPage
-from django.views.decorators.csrf import csrf_exempt
 
-# Create your views here.
-
-
+# 文章信息获取
 def get_article(request):
     rows = request.GET.get('rows')
     page = request.GET.get('page', 1)
@@ -49,7 +39,7 @@ def get_article(request):
     return HttpResponse(data)
 
 
-# 富文本上传图片所使用的的方法
+# 富文本上传图片方法
 @xframe_options_sameorigin  # 允许页面嵌套时发起访问
 @csrf_exempt
 def upload_img(request):

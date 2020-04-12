@@ -1,28 +1,24 @@
-from django.shortcuts import render
-
-# Create your views here.
 from redis import Redis
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-# from send import API_KEY
-# from tools.send_mess import YunPian
-# from tools.random_code import send_code
-# from admins.models import TAdmin
+from send import API_KEY                #封装API_KEY，调用send模块里的API_KEY
+from tools.send_mess import YunPian
+from tools.random_code import send_code
+from admin.models import Admin
+
+# Redis 服务端配置
 red = Redis(host='127.0.0.1', port=6379)
-# Create your views here.
 
-
+# 首页
 def home(request):
-    # username = request.session.get('username')
-    # print(username)
     return render(request, 'home.html')
 
-
+# 登录
 def login(request):
     return render(request, 'login.html')
 
-
+# 短信验证码
 @csrf_exempt
 def get_code(request):
     mobile = request.POST.get('mobile')
@@ -30,7 +26,7 @@ def get_code(request):
     if code:
         return HttpResponse(0)
     else:
-        if TAdmin.objects.filter(password=mobile):
+        if Admin.objects.filter(password=mobile):
             yun_pian = YunPian(API_KEY)
             code = send_code()
             yun_pian.send_message(mobile, code)
@@ -41,7 +37,7 @@ def get_code(request):
         else:
             return HttpResponse(3)
 
-
+# 短信验证码验证
 @csrf_exempt
 def check_user(request):
     try:
@@ -52,6 +48,7 @@ def check_user(request):
         print(code2)
         if mobile != '' and code != '' and code == code2:
             # request.session['username'] = mobile
+            # request.session['userpwd'] = mobile
             return HttpResponse(1)
         else:
             return HttpResponse(0)

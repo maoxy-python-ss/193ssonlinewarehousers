@@ -1,6 +1,8 @@
 from django.urls import path
 from article import views
+
 app_name = 'article'
+
 urlpatterns = [
     path('get_article/', views.get_article, name='get_article'),
     path('upload_img/', views.upload_img, name='upload_img'),
