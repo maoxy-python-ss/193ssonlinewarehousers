@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5d7ce69-5bd2-4b82-8231-7f91d664d43a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/static_html/album_chapter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bannerlist/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bannerlist/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/send_mess.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/send_mess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +12,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.3583252">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+                <state relative-caret-position="184">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
                   <folding>
-                    <element signature="e#659#1170#0" />
-                    <element signature="e#1215#1649#0" />
+                    <element signature="e#0#23#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -39,11 +30,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/bannerlist/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1909">
+                <state relative-caret-position="1794">
                   <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#1#12#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -63,15 +51,21 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/article/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#0#19#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="138">
+                  <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/static_html/album_chapter.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -106,21 +100,24 @@
         <option value="$PROJECT_DIR$/article/views.py" />
         <option value="$PROJECT_DIR$/bannerlist/views.py" />
         <option value="$PROJECT_DIR$/admin/views.py" />
+        <option value="$PROJECT_DIR$/static/static_html/album_chapter.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="762" />
-    <option name="y" value="280" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="665" />
     <option name="width" value="1101" />
     <option name="height" value="1039" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,23 +128,34 @@
             <path>
               <item name="sss_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="sss_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sss_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sss_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="static_html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sss_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sss_project" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/课程资料/第3.5阶段/线上资料/4-13上午资料/cmfz_193" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\onlinewarehouser\sss_project\static\static_html" />
       <recent name="C:\onlinewarehouser\sss_project" />
       <recent name="C:\Users\Administrator\Desktop\课程资料\第3.5阶段\项目代码\sss_project" />
       <recent name="C:\Users\Administrator\Desktop\课程资料\第3.5阶段\项目代码\sss_project\templates" />
@@ -202,17 +210,18 @@
       <updated>1586687507591</updated>
       <workItem from="1586687511422" duration="3221000" />
       <workItem from="1586699008974" duration="6404000" />
+      <workItem from="1586745690515" duration="5119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9625000" />
+    <option name="totallyTimeSpent" value="14744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.11748927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24517168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -368,6 +377,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bannerlist/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -378,34 +394,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bannerlist/views.py">
+    <entry file="file://$PROJECT_DIR$/article/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#659#1170#0" />
-            <element signature="e#1215#1649#0" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article/views.py">
+    <entry file="file://$PROJECT_DIR$/static/static_html/album_chapter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
         </state>
       </provider>
     </entry>
